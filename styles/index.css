@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #000;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(28,53,150,1) 100%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#addtask{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1rem;
+}
+#addtask-button{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    outline: none;
+    border: none;
+    font-size: 3rem;
+    background-color: #fff;
+    font-weight: lighter;
+    color:rgb(41, 123, 90) ;
+    cursor: pointer;
+
+}
+#addtask-textbox{
+    width: 80%;
+    height: 50%;
+    font-size: 1rem;
+    padding-left: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: #000 solid 1px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+    justify-content: center;
+    padding-right: 3rem;
+}
+
+#tasklist{
+    width: 50%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    overflow: auto;
+    background-color: #FFF;
+}
+#tasklists{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tasklist-item, .tasklist-item-complete{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: right;
+    padding: 1rem;
+}
+.tasklist-item-complete{
+    display: none;
+}
+.tasklist-item:hover, .tasklist-item-complete:hover{
+    background-color: rgb(233, 231, 231);
+}
+.tasklist-item-text{
+    width: 100%;
+}
+
+#taskview{
+    width: 40%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    background-color: #fff;
+}
+#taskview-title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: rgb(9, 143, 200);
+    border: none;
+    outline: none;
+}
+#taskview-date{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: none;
+    height: 7rem;
+    border-bottom: #000 solid 2px;
+}
+#taskview-description{
+   height: 100%;
+   resize: none;
+   border: none;
+   border-bottom: #000 solid 2px;
+   outline: none;
+   padding: 10px;
+}
+
+#taskview-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+    align-items: end;
+    height: 100%;
+    padding-bottom: 1rem;
+
+}
+.taskview-button{
+    width: 10rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+}
+#taskview-save{
+    background-color:rgb(41, 123, 90);
+}
+#taskview-save:hover{
+    background-color: rgb(28, 83, 61);
+}
+#taskview-delete{
+    background-color: #b71919;
+}
+#taskview-delete:hover{
+    background-color: #821212;
+}
+#taskview-goback{
+    background-color: #656464;
+}
+#taskview-goback:hover{
+    background-color: #2f2e2e;
+}
+#taskview-save, #taskview-delete, #taskview-goback{
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+h2{
+    color: rgb(9, 143, 200);
+}
+.tasklist-title{
+    padding-left: 1rem;
+}
+.tasklist-title-div{
+    display: flex;
+    flex-direction: row;
+    border-bottom: rgb(9, 143, 200) solid 3px;
+    cursor: pointer;
+}
+.accordion-symbol{
+    display: flex;
+    align-items: center;
+}

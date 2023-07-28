@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jquery-3.7.0.js"></script>
+    <script src="./scripts/addtask.js"></script>
+    <script src="./scripts/loadtask.js"></script>
+    <script src="./scripts/selectedtask.js"></script>
+    <script src="./scripts/dropdowneffect.js"></script>
+    <script src="./scripts/doneTask.js"></script>
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Todo List</title>
+</head>
+
+<body>
+    <main>
+        <div id="tasklist" class="tasklist">
+            <header id="addtask">
+                <input type="text" id="addtask-textbox" name="task" placeholder="adicione uma tarefa..."/>
+                <button id="addtask-button">&#43;</button>
+            </header>
+
+            <div id="tasklists">
+                <div id="tasklist-pending">
+                    <input type='hidden' value='0' id='hidden'/>
+                    <div class="tasklist-title-div">
+                        <span class="accordion-symbol" style="transform: rotate(270deg);">&#9668;</span> 
+                        <h2 class="tasklist-title">Pendente</h2>
+                    </div>
+                </div>
+                <div id="tasklist-completed">
+                    <input type='hidden' value='1' id='hidden'/>
+                    <div class="tasklist-title-div">
+                        <span class="accordion-symbol" style="transform: rotate(180deg);">&#9668;</span>
+                        <h2 class="tasklist-title">Concluídas</h2>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+</body>
+</html>
